@@ -96,7 +96,7 @@ background: linear-gradient(135deg, #141e30, #243b55);
     box-shadow: 0 12px 30px rgb(0,0,0,0.6);
     max-width: 400px;
     width: 90%;
-    color: white;
+    color: #00ff00;
 }
 
 .card h1,
@@ -114,7 +114,7 @@ body {
 }
 
 .card h2 {
-    color: #e5e7eb;
+    color: #00ff00;
     margin-top: 10px;
     margin-bottom: 15px;
 }
