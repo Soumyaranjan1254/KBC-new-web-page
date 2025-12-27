@@ -64,7 +64,7 @@ if (contactForm) {
       emailInput.classList.add("input-error");
       hasError = true;
     } else if (!trimmedEmail.includes("@")) {
-      emailError.textContent = "Email me @ hona chahiye.";
+      emailError.textContent = "Email @ required.";
       emailInput.classList.add("input-error");
       hasError = true;
     } else {
