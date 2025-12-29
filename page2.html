@@ -1,64 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Second page portfolio</title>
+  <head>
+  <meta charset="UTF-8">
+  <title>Contact Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="perconnect" href="https://fonts.googleapis.com">
-        <link rel="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <div class="navbar">
-            <div class="logo">KBC Portfolio</div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="project.html">KBC Informations</a>
-                <a href="aboutKBC.html">AboutKBC</a>
-                <a href="pgdcainformation.html">Course Information</a>
-            </div>
+  <div class="navbar">
+    <div class="logo">Soumya Portfolio</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="project.html">About KBC</a>
+      <a href="pgdcainformation.html">Course Informations</a>
+      <a href="project.html">KBC Information</a>
+    </div>
+  </div>
+
+  <div class="page-wrapper">
+    <div class="card">
+      <h2 id="contact">Contact Me</h2>
+
+      <form id="contactForm">
+        <div class="form-group">
+          <input id="nameInput" type="text" placeholder="Your Name">
+          <small id="nameError" class="error"></small>
         </div>
 
-        <div class="page-wrapper">
-            <div class="card">
-                <h2 id="contact">Contact Me</h2>
-
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input id="nameInput" type="text" placeholder="Your Nmame">
-                        <small id="nameError" class="error"></small>
-                    </div>
-                    <div class="form-group">
-                        <input id="emailInput" type="text" placeholder="Your Email">
-                        <small id="emailError" class="error"></small>
-                    </div>
-                    <div class="form-group">
-                        <label for="inquiry">Show Menu:</label>
-                        <select id="inquiry" name="inquiry">
-                            <opction value="learning">Computer Course</opction>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="msgInput" rows="4"
-                     placeholder="Your Message"></textarea>
-                        <small id="msgError" class="error"></small><br><br>
-                        <small id="msgCount" class="success"></small>
-            </div>
-
-            <button type="submit" class="btn" id="submitBtn">Submit</button>
-            <p id="successMsg" class="success"></p>
-                </form>
-
-                <a href="./pgdcainformation.html" class="btn">Back Page</a>
-                <a href="./about.html" class="btn">Next Page</a>
-
-
-            </div>
+        <div class="form-group">
+          <input id="emailInput" type="text" placeholder="Your Email">
+          <small id="emailError" class="error"></small>
         </div>
-        
-    </body>
+<div class="form-group">
+  <label for="inquiry">Select Inquiry Type:</label>
+  <select id="inquiry" name="inquiry">
+    <option value="learning">Computer course learning</option>
+    <option value="other">Other</option>
+  </select>
+</div>
+
+        <div class="form-group">
+          <textarea id="msgInput" rows="4" placeholder="Your Message"></textarea>
+          <small id="msgError" class="error"></small><br>
+          <small id="msgCount" class="success"></small>
+        </div>
+
+        <button type="submit" class="btn" id="submitBtn">Submit</button>
+        <p id="successMsg" class="success"></p>
+      </form>
+
+      <br><br>
+
+      <a href="./pgdcainformation.html" class="btn">Back Page</a>
+      <a href="./about.html" class="btn">Next Page</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="formValidation.js"></script>
+</body>
 </html>
